@@ -10,5 +10,6 @@ void Student::treat()
 }
 void Student::treat(QString foodName)
 {
-    qDebug()<<"请老师吃饭就吃"<<foodName;
+    //QString->char* 先转成QByteArray （.toUtf8()）再转成char*
+    qDebug()<<"请老师吃饭就吃"<<foodName.toUtf8().data();
 }

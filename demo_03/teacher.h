@@ -15,6 +15,7 @@ signals:
     //可以有参数  可以重载
     void hungry();
     void hungry(QString foodName);//重载版本
+    void singal2();
 
 
 };
